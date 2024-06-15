@@ -9,7 +9,7 @@ class product(models.Model):
     product_name=models.CharField(max_length=100)
     description=models.TextField()
     stock=models.IntegerField(default=100)
-    price=models.DecimalField(default=0, decimal_places=2, max_digits=6)
+    price=models.DecimalField(default=0, decimal_places=2, max_digits=1000)
     
     image=models.ImageField(upload_to='static/product',blank=True)
 
