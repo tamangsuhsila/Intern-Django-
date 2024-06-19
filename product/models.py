@@ -19,11 +19,6 @@ class product(models.Model):
     gender = models.CharField(max_length=100, choices=(('male','M'),
                                                        ('female','F')))
     
-    size = models.CharField(max_length=100, choices=(('38','38'),
-                                                     ('39','39'),
-                                                     ('40','40'),
-                                                     ))
-    
     discount = models.IntegerField()
     
     def __str__(self):

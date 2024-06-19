@@ -14,7 +14,7 @@ class ProductViewSet(viewsets.ModelViewSet):
         pk = request.data.get('id')
         Branches = get_object_or_404(product, pk=pk)
         Branches.delete()
-        return Response({ 'message':'Branch deleted successfully'})
+        return Response({ 'message':'Product deleted successfully'})
         
     
     
